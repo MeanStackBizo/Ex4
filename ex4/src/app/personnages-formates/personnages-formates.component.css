@@ -1,0 +1,13 @@
+.titre{
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.box{
+    background-color: gray;
+    border-radius: 25px;
+    color: #fff;
+    font-weight: bold;
+    padding: 5px;
+}

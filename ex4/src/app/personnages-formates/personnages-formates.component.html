@@ -1,0 +1,26 @@
+<div class="container-fluid m-2 py-4">
+     <p class="titre mb-5 mt-2">Liste des personnages</p>
+     <div class="row text-center d-flex justify-content-center">
+      <div class="card col-lg-3 mx-2 mb-2" *ngFor="let item of tabPersonnages">
+        <div class="card-header">
+          {{item.nom}}
+        </div>
+        <div class="card-body text-center">
+          <p class="card-title">
+              <img [src]="item.Image" width="100px">
+          </p>
+          <div class="card-text d-flex align-items-center gap-2">
+            <p>
+              <label for="">Majeur</label>
+              <input type="checkbox" [checked]="item.majeur" >
+            </p>
+             <p class="box">
+                Nombre d'abonnés : {{item.nb}}
+             </p>
+            </div>
+          <a href="#" class="btn btn-primary"><i class="fa-solid fa-pen-to-square"></i> S'abonner</a>
+        </div>
+      </div>
+     </div>
+     <p class="text-center titre py-2 mt-3">Le Nomrbe de personnes majeurs : {{getNbrMajeur()}}</p>
+</div>
